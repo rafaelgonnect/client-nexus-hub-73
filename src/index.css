@@ -74,3 +74,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bg-gray-900 {
+  background-color: #1a202c;
+}
+
+.bg-gray-800 {
+  background-color: #2d3748;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
