@@ -1,10 +1,11 @@
-import { HomeIcon, UsersIcon, PackageIcon, BarChartIcon, SettingsIcon, Workflow } from "lucide-react";
+import { HomeIcon, UsersIcon, PackageIcon, BarChartIcon, SettingsIcon, Workflow, DollarSign } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import Clientes from "./pages/Clientes.jsx";
 import Estoque from "./pages/Estoque.jsx";
 import Financas from "./pages/Financas.jsx";
 import Configuracoes from "./pages/Configuracoes.jsx";
 import Automacao from "./pages/Automacao.jsx";
+import PayTheBil from "./pages/PayTheBil.jsx";
 
 export const navItems = [
   {
@@ -36,6 +37,12 @@ export const navItems = [
     to: "/automacao",
     icon: <Workflow className="h-5 w-5" />,
     page: <Automacao />,
+  },
+  {
+    title: "Pay the Bil",
+    to: "/pay-the-bil",
+    icon: <DollarSign className="h-5 w-5" />,
+    page: <PayTheBil />,
   },
   {
     title: "Configurações",
