@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "@/components/ui/table";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Plus, Edit, Trash2 } from 'lucide-react';
 
 const Clientes = () => {
   return (
@@ -11,7 +12,9 @@ const Clientes = () => {
       <h1 className="text-3xl font-bold mb-4">Gestão de Clientes</h1>
       <div className="flex flex-col sm:flex-row justify-between mb-4 gap-4">
         <Input className="w-full sm:w-64" placeholder="Pesquisar clientes..." />
-        <Button className="w-full sm:w-auto">Adicionar Cliente</Button>
+        <Button className="w-full sm:w-auto">
+          <Plus className="mr-2" size={16} /> Adicionar Cliente
+        </Button>
       </div>
       <Card className="overflow-hidden">
         <CardHeader>
@@ -34,8 +37,12 @@ const Clientes = () => {
                   <TableCell className="hidden sm:table-cell">joao@email.com</TableCell>
                   <TableCell className="hidden sm:table-cell">(11) 99999-9999</TableCell>
                   <TableCell className="text-right">
-                    <Button variant="outline" size="sm" className="mr-2">Editar</Button>
-                    <Button variant="destructive" size="sm">Excluir</Button>
+                    <Button variant="outline" size="sm" className="mr-2">
+                      <Edit size={14} className="mr-1" /> Editar
+                    </Button>
+                    <Button variant="destructive" size="sm">
+                      <Trash2 size={14} className="mr-1" /> Excluir
+                    </Button>
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -43,8 +50,12 @@ const Clientes = () => {
                   <TableCell className="hidden sm:table-cell">maria@email.com</TableCell>
                   <TableCell className="hidden sm:table-cell">(11) 88888-8888</TableCell>
                   <TableCell className="text-right">
-                    <Button variant="outline" size="sm" className="mr-2">Editar</Button>
-                    <Button variant="destructive" size="sm">Excluir</Button>
+                    <Button variant="outline" size="sm" className="mr-2">
+                      <Edit size={14} className="mr-1" /> Editar
+                    </Button>
+                    <Button variant="destructive" size="sm">
+                      <Trash2 size={14} className="mr-1" /> Excluir
+                    </Button>
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -52,8 +63,12 @@ const Clientes = () => {
                   <TableCell className="hidden sm:table-cell">carlos@email.com</TableCell>
                   <TableCell className="hidden sm:table-cell">(11) 77777-7777</TableCell>
                   <TableCell className="text-right">
-                    <Button variant="outline" size="sm" className="mr-2">Editar</Button>
-                    <Button variant="destructive" size="sm">Excluir</Button>
+                    <Button variant="outline" size="sm" className="mr-2">
+                      <Edit size={14} className="mr-1" /> Editar
+                    </Button>
+                    <Button variant="destructive" size="sm">
+                      <Trash2 size={14} className="mr-1" /> Excluir
+                    </Button>
                   </TableCell>
                 </TableRow>
               </TableBody>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const data = [
   { name: 'Jan', receitas: 4000, despesas: 2400 },
@@ -38,15 +39,19 @@ const Financas = () => {
           <CardTitle>Balanço Financeiro</CardTitle>
         </CardHeader>
         <CardContent>
-          <LineChart width={600} height={300} data={data}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Line type="monotone" dataKey="receitas" stroke="#8884d8" />
-            <Line type="monotone" dataKey="despesas" stroke="#82ca9d" />
-          </LineChart>
+          <ScrollArea className="h-[300px] sm:h-auto">
+            <ResponsiveContainer width="100%" height={300}>
+              <LineChart data={data}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Line type="monotone" dataKey="receitas" stroke="#8884d8" />
+                <Line type="monotone" dataKey="despesas" stroke="#82ca9d" />
+              </LineChart>
+            </ResponsiveContainer>
+          </ScrollArea>
         </CardContent>
       </Card>
     </div>
