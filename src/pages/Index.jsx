@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Users, Package, BarChart2, Settings } from 'lucide-react';
+import { Users, Package, BarChart2, Settings, Workflow } from 'lucide-react';
 
 const Index = () => {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-4xl font-bold mb-8 text-blue-800">Dashboard CRM</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <Card className="bg-gradient-to-br from-blue-500 to-blue-600 text-white">
           <CardHeader>
             <CardTitle className="flex items-center"><Users className="mr-2" size={20} /> Clientes</CardTitle>
@@ -44,6 +44,19 @@ const Index = () => {
             <Link to="/financas">
               <Button className="w-full bg-white text-purple-600 hover:bg-purple-100">
                 <BarChart2 className="mr-2" size={16} /> Acessar
+              </Button>
+            </Link>
+          </CardContent>
+        </Card>
+        <Card className="bg-gradient-to-br from-yellow-500 to-yellow-600 text-white">
+          <CardHeader>
+            <CardTitle className="flex items-center"><Workflow className="mr-2" size={20} /> Automação</CardTitle>
+            <CardDescription className="text-yellow-100">Criar fluxos de trabalho</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Link to="/automacao">
+              <Button className="w-full bg-white text-yellow-600 hover:bg-yellow-100">
+                <Workflow className="mr-2" size={16} /> Acessar
               </Button>
             </Link>
           </CardContent>
