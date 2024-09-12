@@ -5,7 +5,6 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { Users, Package, BarChart2, Settings, Workflow, AlertCircle } from 'lucide-react';
 import DashboardGraphs from '../components/DashboardGraphs';
 import DashboardSummary from '../components/DashboardSummary';
-import PayTheBil from '../components/PayTheBil';
 
 const Index = () => {
   return (
@@ -14,7 +13,6 @@ const Index = () => {
       
       <DashboardGraphs />
       <DashboardSummary />
-      <PayTheBil />
 
       {/* Main Modules */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
