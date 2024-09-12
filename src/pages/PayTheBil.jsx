@@ -57,6 +57,42 @@ const PayTheBil = () => {
       ctaLink: "https://wa.me/5511999999999?text=Gostaria%20de%20saber%20mais%20sobre%20o%20módulo%20de%20controle%20de%20estoque"
     },
     {
+      title: "Módulo: Gestão de Documentos via Google Drive",
+      price: "Apenas R$ 19,90/mês",
+      features: [
+        "Integração direta com o Google Drive",
+        "Organização automática de documentos",
+        "Busca inteligente por palavras-chave",
+        "Compartilhamento seguro de arquivos"
+      ],
+      ctaText: "Converse com o Bil",
+      ctaLink: "https://wa.me/5511999999999?text=Gostaria%20de%20saber%20mais%20sobre%20o%20módulo%20de%20gestão%20de%20documentos%20via%20Google%20Drive"
+    },
+    {
+      title: "Módulo: Agendamentos Inteligentes",
+      price: "A partir de R$ 15,90/mês",
+      features: [
+        "Agendamento automático de compromissos",
+        "Lembretes personalizados",
+        "Sincronização com múltiplos calendários",
+        "Análise de produtividade e tempo"
+      ],
+      ctaText: "Converse com o Bil",
+      ctaLink: "https://wa.me/5511999999999?text=Gostaria%20de%20saber%20mais%20sobre%20o%20módulo%20de%20agendamentos%20inteligentes"
+    },
+    {
+      title: "Bil na Sua Empresa",
+      price: "Consultoria Personalizada",
+      features: [
+        "Análise detalhada das necessidades de automação",
+        "Planejamento estratégico de implementação",
+        "Demonstração ao vivo das soluções do Bil",
+        "Proposta sob medida para sua empresa"
+      ],
+      ctaText: "Agende uma Consultoria",
+      ctaLink: "https://wa.me/5511999999999?text=Gostaria%20de%20agendar%20uma%20consultoria%20do%20Bil%20na%20minha%20empresa"
+    },
+    {
       title: "Bil sob medida",
       price: "Pague pelo que precisar!",
       features: [
