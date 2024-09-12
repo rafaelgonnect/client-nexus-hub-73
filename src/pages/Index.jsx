@@ -73,7 +73,7 @@ const Index = () => {
 };
 
 const ModuleCard = ({ title, icon, description, stats, link, color, buttonText = "Acessar" }) => (
-  <Card className={`bg-white border-l-4 border-${color}-500 shadow-md hover:shadow-lg transition-shadow`}>
+  <Card className={`bg-white shadow-md hover:shadow-lg transition-shadow`}>
     <CardHeader>
       <CardTitle className="flex items-center text-lg font-semibold text-gray-800">
         <span className={`mr-2 text-${color}-500`}>{icon}</span>
@@ -85,9 +85,9 @@ const ModuleCard = ({ title, icon, description, stats, link, color, buttonText =
       {stats.map((stat, index) => (
         <p key={index} className="text-sm text-gray-700 mb-1">{stat}</p>
       ))}
-      <Link to={link} className="mt-4 inline-block">
+      <Link to={link} className="mt-4 inline-block w-full">
         <Button className={`w-full bg-${color}-500 hover:bg-${color}-600 text-white`}>
-          {icon} {buttonText}
+          {buttonText}
         </Button>
       </Link>
     </CardContent>

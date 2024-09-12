@@ -14,7 +14,7 @@ const Sidebar = ({ open, setOpen }) => {
       )} onClick={() => setOpen(false)} />
       <aside className={cn(
         "fixed top-0 left-0 z-50 flex flex-col w-64 h-screen transition-transform bg-gradient-to-b from-blue-600 to-blue-800 text-white",
-        "md:relative md:translate-x-0",
+        "md:sticky md:translate-x-0",
         open ? "translate-x-0" : "-translate-x-full"
       )}>
         <div className="flex items-center justify-between p-4 md:p-5 border-b border-blue-700">

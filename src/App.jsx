@@ -21,7 +21,7 @@ const App = () => {
           <div className="flex bg-gradient-to-br from-blue-100 to-purple-100 min-h-screen">
             <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
             <div className="flex-1 flex flex-col">
-              <header className="bg-white shadow-md p-4 flex justify-between items-center md:hidden">
+              <header className="bg-white shadow-md p-4 flex justify-between items-center md:hidden sticky top-0 z-10">
                 <Button variant="ghost" onClick={() => setSidebarOpen(true)}>
                   <Menu className="h-6 w-6" />
                 </Button>
