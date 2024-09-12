@@ -12,9 +12,9 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <BrowserRouter>
-        <div className="flex">
+        <div className="flex bg-gray-100 min-h-screen">
           <Sidebar />
-          <main className="flex-1 p-8 bg-gray-100 min-h-screen">
+          <main className="flex-1 p-8">
             <Routes>
               {navItems.map(({ to, page }) => (
                 <Route key={to} path={to} element={page} />
